@@ -1,0 +1,284 @@
+@import url('../css/reset.css');
+
+body,
+html {
+  height: 100%;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.direction-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1740px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #0b2e3533;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+
+.header__item {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0b2e35;
+  transition: 0.3s ease-in-out;
+}
+
+.header__item:not(.logo, .basket, .user, .call-link, .menu-btn) {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header__item:not(.logo, .basket, .user, .call-link, .menu-btn)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #208c38;
+  transition: 0.3s ease-in-out;
+}
+
+.header__item:not(.logo, .basket, .user, .call-link, .menu-btn):hover::after {
+  width: 100%;
+}
+
+.header__item.logo {
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.header__item.basket,
+.header__item.user {
+  line-height: 0;
+}
+
+.header__item.basket:hover,
+.header__item.user:hover {
+  transform: scale(1.2);
+}
+
+.header__item.basket svg,
+.header__item.user svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+/* Кнопка звонка */
+.call-link {
+  position: relative;
+  width: 270px;
+  height: 58px;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(11, 46, 53, 0.3);
+}
+
+.call-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #208c3824;
+  transition: 0.3s ease-in-out;
+}
+
+.call-link:hover::after {
+  width: 100%;
+}
+
+.call-link__phone {
+  position: relative;
+  width: 20px;
+  height: 100%;
+  background: url('../img/icons/phone.svg') no-repeat;
+  background-size: contain;
+}
+
+.call-link__phone::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 35px;
+  top: -6px;
+  left: 40px;
+  background-color: rgba(11, 46, 53, 0.3);
+}
+
+.call-link__number {
+  z-index: 1;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #208c38;
+  transition: 0.3s ease-in-out;
+}
+
+/* Кнопка мобильного меню */
+
+.menu-btn {
+  display: none;
+  padding: 17px 20px;
+  border: 1px solid rgba(11, 46, 53, 0.3);
+  height: 58px;
+}
+
+.menu-btn__item {
+  transition: transform 0.25s;
+}
+
+.menu-btn.active .menu-btn__item:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: -1px 3px;
+}
+
+.menu-btn.active .menu-btn__item:nth-of-type(2) {
+  display: none;
+}
+
+.menu-btn.active .menu-btn__item:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 0px 13px;
+}
+
+/* Основная кнопка */
+.main-btn {
+  display: block;
+  position: relative;
+  padding: 25px 70px;
+  background: linear-gradient(180deg, #208c38 0, #0f3f19 211.96%);
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+  overflow: hidden;
+
+  height: 70px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+}
+
+.main-btn:hover {
+  line-height: 150px;
+}
+
+.main-btn:hover::before {
+  content: attr(data-text);
+  color: #deeff5;
+  position: absolute;
+  top: -41px;
+}
+
+/* Кастомный чекбокс */
+.checkbox {
+  position: relative;
+
+  --width: 50px;
+  --height: 25px;
+  --offset: 5px;
+  --active-color: #19a5b6;
+  --inactive-color: rgb(101 111 116);
+  --active-circle-color: #fff;
+  --inactive-circle-color: #fff6;
+
+  transition: 0.2s ease-in;
+}
+
+.checkbox:hover {
+  filter: brightness(1.2);
+}
+
+.checkbox__label {
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__fake {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--width);
+  background-color: var(--inactive-color);
+  transition: 1s ease-in-out;
+}
+
+.checkbox__fake::after {
+  content: '';
+  position: absolute;
+  top: var(--offset);
+  left: var(--offset);
+  width: calc(var(--height) - 2 * var(--offset));
+  height: calc(var(--height) - 2 * var(--offset));
+  background-color: var(--inactive-circle-color);
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.checkbox__input:checked ~ .checkbox__fake {
+  background-color: var(--active-color);
+}
+
+.checkbox__input:checked ~ .checkbox__fake::after {
+  background-color: var(--active-circle-color);
+  left: calc(var(--width) - var(--height) + var(--offset));
+}
+
+/* Карта обнуление*/
+
+[class*='copyrights-pane'] {
+  display: none !important;
+}
+
+[class*='ymaps-2-1'][class*='-balloon'] {
+  background: transparent;
+  box-shadow: none;
+}
+
+[class*='ymaps-2-1'][class*='-balloon']::after {
+  display: none;
+}

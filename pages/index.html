@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЖБИ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <div class="direction-wrap">
+      <div class="head-section-wrap">
+        <header class="header">
+          <div class="container">
+            <div class="header__nav">
+              <a href="#" class="header__item logo">
+                <img src="../img/logo.svg" alt="logo" class="header__logo" />
+              </a>
+              <div class="header__menu">
+                <a href="#" class="header__item">О компании</a>
+                <a href="#" class="header__item">Каталог</a>
+                <a href="#" class="header__item">Услуги</a>
+                <a href="#" class="header__item">Доставка и оплата</a>
+                <a href="#" class="header__item">Контакты</a>
+                <a href="#" class="header__item basket">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.2714 32.9998C9.87805 32.9998 11.1805 31.6974 11.1805 30.0907C11.1805 28.4841 9.87805 27.1816 8.2714 27.1816C6.66475 27.1816 5.3623 28.4841 5.3623 30.0907C5.3623 31.6974 6.66475 32.9998 8.2714 32.9998Z"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M28.6347 32.9998C30.2413 32.9998 31.5438 31.6974 31.5438 30.0907C31.5438 28.4841 30.2413 27.1816 28.6347 27.1816C27.028 27.1816 25.7256 28.4841 25.7256 30.0907C25.7256 31.6974 27.028 32.9998 28.6347 32.9998Z"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M28.6348 27.1818H8.27112C8.27112 27.1818 5.36202 1 5.36364 1H1"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.0083 6.81836L32.9966 9.72745L31.7037 21.3638H7.62446"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="header__item user">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 35 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 19C22.1944 19 26 14.9706 26 10C26 5.02944 22.1944 1 17.5 1C12.8056 1 9 5.02944 9 10C9 14.9706 12.8056 19 17.5 19Z"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 33C1 25.2611 5.38 19 14.5 19H20.5C29.62 19 34 25.2611 34 33"
+                      stroke="#208C38"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a href="tel:+73012372424" class="header__item call-link">
+                <span class="call-link__phone"></span>
+                <span class="call-link__number">8 (3012) 37-24-24</span>
+              </a>
+              <button class="header__item menu-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="17px"
+                  height="16px"
+                >
+                  <path
+                    class="menu-btn__item"
+                    fill-rule="evenodd"
+                    fill="#208c38"
+                    d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z"
+                  />
+                  <path
+                    class="menu-btn__item"
+                    fill-rule="evenodd"
+                    fill="#208c38"
+                    d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z"
+                  />
+                  <path
+                    class="menu-btn__item"
+                    fill-rule="evenodd"
+                    fill="#208c38"
+                    d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <section class="head">
+          <div class="container">
+            <div class="head__block">
+              <h1 class="head__title">
+                <span class="head">Производство и поставка</span>
+                <span class="center">жби</span>
+                <span class="end">и сопутствующих товаров</span>
+              </h1>
+              <a href="#categoryTabs" class="head__link main-btn" data-text="Каталог продукции">
+                Каталог продукции
+              </a>
+            </div>
+
+            <div class="head__tabs-category" id="categoryTabs">
+              <span class="head__tabs-text"> Мы изготовляем и поставляем </span>
+              <div class="head__tabs">
+                <div class="head__tabs-item" data-category-id="1">
+                  <div class="head__item-img">
+                    <img src="../img/headtab1.png" alt="" class="ferroconcrete" />
+                  </div>
+                  <h2 class="head__item-title">Изделия из железобетона</h2>
+                </div>
+                <div class="head__tabs-item" data-category-id="2">
+                  <div class="head__item-img">
+                    <img src="../img/headtab2.png" alt="" class="inert-materials" />
+                  </div>
+                  <h2 class="head__item-title">Инертные материалы</h2>
+                </div>
+                <div class="head__tabs-item" data-category-id="3">
+                  <div class="head__item-img">
+                    <img src="../img/headtab3.png" alt="" class="cement" />
+                  </div>
+                  <h2 class="head__item-title">Цемент</h2>
+                </div>
+                <div class="head__tabs-item" data-category-id="4">
+                  <div class="head__item-img">
+                    <img src="../img/headtab4.png" alt="" class="hardware" />
+                  </div>
+                  <h2 class="head__item-title">Металлические изделия</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <main>
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog__list">
+              <!--  
+            <div class="catalog__item">
+              <h1 class="catalog__title">Каталог продукции</h1>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__img">
+                <img src="../img/category1.png" alt="">
+              </div>
+              <div class="catalog__content">
+                <span class="catalog__number">01</span>
+                <h2 class="catalog__item-title">Плиты<br> перекрытия<br> пустотные</h2>
+              </div>
+              <span class="catalog__blur"></span>
+
+              <div class="catalog__angle topleft"></div>
+              <div class="catalog__angle topright"></div>
+              <div class="catalog__angle bottomleft"></div>
+              <div class="catalog__angle bottomright"></div>
+            </div>
+            --></div>
+          </div>
+        </section>
+
+        <div class="services-delivery-wrap">
+          <div class="services-delivery__back-left"></div>
+          <div class="services-delivery__blur"></div>
+
+          <section class="services">
+            <h1 class="services__title">Услуги</h1>
+            <div class="services__body">
+              <div class="services__content">
+                <h1 class="services__content-title">Услуги компании</h1>
+                <p class="services__content-desc">
+                  Кроме продажи непосредственно<br />
+                  железобетонных изделий, ООО «Строй - Сети»,<br />
+                  также оказывает комплекс услуг.
+                </p>
+                <div class="services__item active" data-services="spectech">
+                  <h2 class="services__item-title">Услуги спецтехники</h2>
+                  <div class="services__item-body">
+                    <p class="services__item-desc">
+                      Кроме продажи непосредственно железобетонных изделий, ООО «Строй - Сети»,
+                      также оказывает комплекс услуг.
+                    </p>
+                  </div>
+                  <div class="services__item-border"></div>
+                </div>
+                <div class="services__item" data-services="transshipment">
+                  <h2 class="services__item-title">Услуги перевалки</h2>
+                  <div class="services__item-body">
+                    <p class="services__item-desc">
+                      Кроме продажи непосредственно железобетонных изделий, ООО «Строй - Сети»,
+                      также оказывает комплекс услуг.
+                    </p>
+                  </div>
+                  <div class="services__item-border"></div>
+                </div>
+                <div class="services__item" data-services="laboratory">
+                  <h2 class="services__item-title">Услуги лаборатории</h2>
+                  <div class="services__item-body">
+                    <p class="services__item-desc">
+                      Кроме продажи непосредственно железобетонных изделий, ООО «Строй - Сети»,
+                      также оказывает комплекс услуг. Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Sit nobis, incidunt ipsa aliquam pariatur voluptatem.
+                      Veritatis odit labore ratione nobis explicabo, laboriosam repellendus
+                      molestiae voluptatibus consequuntur ad. Non, maxime labore. Sunt voluptate
+                      facere repudiandae cum similique alias tempora itaque autem deserunt a
+                      deleniti consequatur omnis perspiciatis placeat, sit eos, odio laudantium et
+                      fuga distinctio rerum cupiditate saepe. Corrupti, illo est?Lorem ipsum, dolor
+                      sit amet consectetur adipisicing elit. Dolorum veniam laudantium assumenda
+                      consequuntur blanditiis? Fugiat, alias? Atque facilis, perferendis eum
+                      reprehenderit voluptatem dolorem magni! Sequi omnis reiciendis adipisci at
+                      excepturi.
+                    </p>
+                  </div>
+                  <div class="services__item-border"></div>
+                </div>
+              </div>
+
+              <div class="services__slider swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide" data-slide="spectech">
+                    <div class="services__card">
+                      <div class="services__card-img-main">
+                        <img src="../img/services/spectech-back.jpg" alt="" />
+                      </div>
+                      <div class="services__card-img-front">
+                        <img src="../img/services/spectech-cars.png" alt="" />
+                      </div>
+
+                      <div class="services__card-name">
+                        <h2 class="services__card-title">
+                          Услуги<br />
+                          спецтехники
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-slide="transshipment">
+                    <div class="services__card">
+                      <div class="services__card-img-main">
+                        <img src="../img/services/spectech-back.jpg" alt="" />
+                      </div>
+                      <div class="services__card-img-front">
+                        <img src="../img/services/spectech-cars.png" alt="" />
+                      </div>
+
+                      <div class="services__card-name">
+                        <h2 class="services__card-title">
+                          Услуги<br />
+                          перевалки
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-slide="laboratory">
+                    <div class="services__card">
+                      <div class="services__card-img-main">
+                        <img src="../img/services/spectech-back.jpg" alt="" />
+                      </div>
+                      <div class="services__card-img-front">
+                        <img src="../img/services/spectech-cars.png" alt="" />
+                      </div>
+
+                      <div class="services__card-name">
+                        <h2 class="services__card-title">
+                          Услуги<br />
+                          лаборатории
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="services__slider-prev"></div>
+                <div class="services__slider-next"></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="delivery-clouds">
+            <div class="delivery-cloud__layer"></div>
+          </div>
+
+          <section class="delivery">
+            <h1 class="delivery__title">
+              <span>Доставка</span>
+              <span>и оплата</span>
+            </h1>
+            <div class="delivery__body">
+              <div class="delivery__info">
+                <div class="delivery__info-btns">
+                  <button class="delivery__btn active" data-target="delivery-pay">
+                    Оплата ЖБИ
+                  </button>
+                  <button class="delivery__btn" data-target="delivery">Доставка ЖБИ</button>
+                </div>
+
+                <div class="delivery__tab active" data-path="delivery-pay">
+                  <p class="delivery__main-text">Организуем доставку ЖБИ по всей России</p>
+                  <p class="delivery__advantage-text delivery__text">
+                    Длинномеры завода позволяют перевозить продукцию весом до 20 тонн.
+                  </p>
+                  <p class="delivery__advantage-text delivery__text">
+                    Имеются собственные подъездные пути для быстрой отгрузки железобетонных изделий
+                    завода.
+                  </p>
+
+                  <p class="delivery__text">
+                    Стоимость доставки договорная напрямую зависит от объема доставляемой продукции
+                    и расстояния до строительного объекта.
+                  </p>
+                </div>
+
+                <div class="delivery__tab" data-path="delivery">
+                  <p class="delivery__main-text">Другой таб</p>
+                  <p class="delivery__advantage-text delivery__text">
+                    Длинномеры завода позволяют перевозить продукцию весом до 20 тонн.
+                  </p>
+                  <p class="delivery__advantage-text delivery__text">
+                    Имеются собственные подъездные пути для быстрой отгрузки железобетонных изделий
+                    завода.
+                  </p>
+
+                  <p class="delivery__text">
+                    Стоимость доставки договорная напрямую зависит от объема доставляемой продукции
+                    и расстояния до строительного объекта.
+                  </p>
+                </div>
+              </div>
+              <div class="delivery__content"></div>
+            </div>
+          </section>
+        </div>
+
+        <section class="work">
+          <div class="work__container">
+            <h1 class="work__title">На нашем<br />фундаменте<br />построено</h1>
+            <div class="work__slider-prev">
+              <svg
+                width="50"
+                height="15"
+                viewBox="0 0 50 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.292569 8.10701C-0.0979553 7.71648 -0.0979553 7.08332 0.292569 6.6928L6.65653 0.328835C7.04705 -0.0616898 7.68022 -0.0616898 8.07074 0.328835C8.46127 0.719359 8.46127 1.35252 8.07074 1.74305L2.41389 7.3999L8.07074 13.0568C8.46127 13.4473 8.46127 14.0804 8.07074 14.471C7.68022 14.8615 7.04705 14.8615 6.65653 14.471L0.292569 8.10701ZM49.7539 8.3999L0.999676 8.3999L0.999676 6.3999L49.7539 6.3999L49.7539 8.3999Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </div>
+            <div class="work__slider-next">
+              <svg
+                width="117"
+                height="40"
+                viewBox="0 0 117 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="97" cy="20" r="19.5" stroke="#D9D9D9" />
+                <path
+                  d="M100.707 20.7071C101.098 20.3166 101.098 19.6834 100.707 19.2929L94.3431 12.9289C93.9526 12.5384 93.3195 12.5384 92.9289 12.9289C92.5384 13.3195 92.5384 13.9526 92.9289 14.3432L98.5858 20L92.9289 25.6569C92.5384 26.0474 92.5384 26.6806 92.9289 27.0711C93.3195 27.4616 93.9526 27.4616 94.3431 27.0711L100.707 20.7071ZM-8.74228e-08 21L100 21L100 19L8.74228e-08 19L-8.74228e-08 21Z"
+                  fill="#208C38"
+                />
+              </svg>
+            </div>
+
+            <div class="work__slider">
+              <div class="work__slider-slides">
+                <div class="work__slider-slide">
+                  <div class="work-card">
+                    <div class="work-card__img">
+                      <img src="../img/work/slide1.png" alt="" />
+                    </div>
+                    <div class="work-card__head">
+                      <span class="work-card__number">01</span>
+                      <h3 class="work-card__title">
+                        Омский завод металлоконструкций (ОмЗМ-МЕТАЛЛ)
+                      </h3>
+                    </div>
+                    <div class="work-card__advantage">
+                      <p class="work-card__text">Многопустотные плиты перекрытия или ПК</p>
+                      <p class="work-card__text">Плита перекрытия или ППС (ПБ)</p>
+                      <p class="work-card__text">Облегченные плиты перекрытия или ПНО</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__slider-slide">
+                  <div class="work-card">
+                    <div class="work-card__img">
+                      <img src="../img/work/slide2.png" alt="" />
+                    </div>
+                    <div class="work-card__head">
+                      <span class="work-card__number">02</span>
+                      <h3 class="work-card__title">
+                        Омский завод металлоконструкций (ОмЗМ-МЕТАЛЛ)
+                      </h3>
+                    </div>
+                    <div class="work-card__advantage">
+                      <p class="work-card__text">Многопустотные плиты перекрытия или ПК</p>
+                      <p class="work-card__text">Плита перекрытия или ППС (ПБ)</p>
+                      <p class="work-card__text">Облегченные плиты перекрытия или ПНО</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__slider-slide">
+                  <div class="work-card">
+                    <div class="work-card__img">
+                      <img src="../img/work/slide3.png" alt="" />
+                    </div>
+                    <div class="work-card__head">
+                      <span class="work-card__number">03</span>
+                      <h3 class="work-card__title">
+                        Омский завод металлоконструкций (ОмЗМ-МЕТАЛЛ)
+                      </h3>
+                    </div>
+                    <div class="work-card__advantage">
+                      <p class="work-card__text">Многопустотные плиты перекрытия или ПК</p>
+                      <p class="work-card__text">Плита перекрытия или ППС (ПБ)</p>
+                      <p class="work-card__text">Облегченные плиты перекрытия или ПНО</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="work__slider-slide">
+                  <div class="work-card">
+                    <div class="work-card__img">
+                      <img src="../img/work/slide1.png" alt="" />
+                    </div>
+                    <div class="work-card__head">
+                      <span class="work-card__number">04</span>
+                      <h3 class="work-card__title">
+                        Омский завод металлоконструкций (ОмЗМ-МЕТАЛЛ)
+                      </h3>
+                    </div>
+                    <div class="work-card__advantage">
+                      <p class="work-card__text">Многопустотные плиты перекрытия или ПК</p>
+                      <p class="work-card__text">Плита перекрытия или ППС (ПБ)</p>
+                      <p class="work-card__text">Облегченные плиты перекрытия или ПНО</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="work__build-decor"></div>
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="map__container">
+            <div class="map__contacts">
+              <h1 class="map__title">Контакты</h1>
+              <div class="map__info-item">
+                <span class="map__item-title">Адрес</span>
+                <span class="map__item-value">
+                  670049, Россия, Республика<br />
+                  Бурятия, г.Улан-Удэ,<br />
+                  ул. Домостроительная, д. 7
+                </span>
+              </div>
+              <div class="map__info-item">
+                <span class="map__item-title">Приемная</span>
+                <span class="map__item-value"
+                  >8 (3012) 37-22-30,<br />
+                  37-27-88</span
+                >
+              </div>
+              <div class="map__info-item">
+                <span class="map__item-title">E-mail</span>
+                <span class="map__item-value">zavodbzb@yandex.ru</span>
+              </div>
+              <div class="map__info-item">
+                <span class="map__item-title">Отдел сбыта</span>
+                <span class="map__item-value">8 (3012) 37-24-24</span>
+              </div>
+              <div class="map__info-item">
+                <span class="map__item-title">ПТО</span>
+                <span class="map__item-value">
+                  8 (3012) 64-15-15<br />
+                  +7 (9025) 64-15-15
+                </span>
+              </div>
+            </div>
+            <div id="map" class="map__body"></div>
+          </div>
+        </section>
+      </main>
+
+      <div class="footer-connect-wrap">
+        <section class="connect-section">
+          <div class="connect">
+            <h1 class="connect__title">Задать вопрос</h1>
+            <form action="" class="connect-form">
+              <div class="connect-form__inputs">
+                <div class="connect-form__input-group">
+                  <input id="name" type="text" class="connect-form__input" required />
+                  <label for="name" class="connect-form__label">Фио</label>
+                </div>
+
+                <div class="connect-form__input-group">
+                  <input id="email" type="email" class="connect-form__input" required />
+                  <label for="email" class="connect-form__label">E-mail</label>
+                </div>
+              </div>
+
+              <div class="connect-form__btns">
+                <div class="connect-form__agree">
+                  <label for="checkbox-input" class="connect-form__agree-btn checkbox">
+                    <input id="checkbox-input" class="checkbox__input" type="checkbox" checked />
+                    <div class="checkbox__fake"></div>
+                  </label>
+                  <span class="connect-form__agree-text">
+                    Даю согласие на обработку моих персональных данных в соответствии с Политикой
+                    конфиденциальности
+                  </span>
+                </div>
+                <button class="connect-form__send" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__menu">
+              <div class="footer__item">
+                <a href="#" class="footer__link logo">
+                  <img src="../img/logo-light.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="footer__item">
+                <a href="#" class="footer__link">О компании</a>
+              </div>
+              <div class="footer__item">
+                <a href="#" class="footer__link">Каталог</a>
+              </div>
+              <div class="footer__item">
+                <a href="#" class="footer__link">Услуги</a>
+              </div>
+              <div class="footer__item">
+                <a href="#" class="footer__link">Доставка и оплата</a>
+              </div>
+              <div class="footer__item">
+                <a href="#" class="footer__link">Контакты</a>
+              </div>
+              <div class="footer__item">
+                <span class="footer__confidentiality">Конфиденциальность</span>
+              </div>
+              <div class="footer__item">
+                <span class="footer_rights">© 2023 All rights reserved</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1?apikey=d120e98b-358e-4737-80b8-2b495bbae783&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

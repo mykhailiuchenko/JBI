@@ -1,0 +1,433 @@
+@media screen and (min-width: 1633px) {
+  .head-section-wrap {
+    max-width: 1663px;
+  }
+
+  .container {
+    max-width: 1520px;
+  }
+
+  .main-btn {
+    font-size: 19px;
+    padding: 25px 70px;
+  }
+
+  .delivery__title span:nth-child(1) {
+    margin-left: 15.4%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .services__content-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__nav {
+    position: relative;
+  }
+
+  .header__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease max-height;
+    position: absolute;
+    top: 99px;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    background: #ecf1f9;
+    z-index: 10;
+  }
+
+  .header__menu.active {
+    max-height: 400px;
+  }
+
+  .header__menu .header__item {
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .header__menu .header__item:last-of-type {
+    border: none;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .call-link {
+    display: none;
+  }
+
+  .head__block {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+
+  .catalog__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px repeat(4, 1fr);
+  }
+
+  .catalog__item:nth-child(1) {
+    grid-column: 1/3;
+  }
+
+  .catalog__title {
+    text-align: center;
+    align-self: center;
+  }
+
+  .footer__item:not(:first-of-type):not(:last-of-type) {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .head__tabs-category {
+    flex-direction: column;
+  }
+
+  .head__tabs-text {
+    margin: 0 0 50px 0;
+  }
+
+  .services__body {
+    padding-left: 30px;
+    gap: 40px;
+  }
+
+  .services__title {
+    font-size: 100px;
+  }
+
+  .services__content-title {
+    font-size: 30px;
+  }
+
+  .delivery__body {
+    padding-left: 30px;
+  }
+
+  .delivery__title {
+    font-size: 70px;
+  }
+
+  .delivery__info-btns {
+    flex-direction: column;
+  }
+
+  .delivery__btn {
+    margin: 0;
+    font-size: 29px;
+  }
+
+  .work-card__title {
+    font-size: 15px;
+  }
+
+  .map__contacts {
+    margin: 0;
+  }
+
+  .connect-form__inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .connect-form__input-group {
+    width: auto;
+  }
+
+  .connect-form__btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .connect-form__agree {
+    width: auto;
+  }
+
+  .connect-form__send {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .head__title {
+    font-size: 23px;
+  }
+
+  .head__title .center {
+    font-size: 150px;
+  }
+
+  .head__tabs {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 40px;
+    column-gap: 40px;
+  }
+
+  .services-delivery-wrap::before {
+    max-width: 50%;
+  }
+
+  .services-delivery-wrap::after {
+    max-width: 50%;
+  }
+
+  .services__title {
+    font-size: 65px;
+  }
+
+  .services__body {
+    gap: 0;
+  }
+
+  .services__content {
+    max-width: 44%;
+  }
+
+  .services__slider-next,
+  .services__slider-prev {
+    width: 100px;
+    height: 29px;
+  }
+
+  .delivery__title {
+    --size-bg: 50%;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .delivery__info {
+    max-width: 44%;
+  }
+
+  .delivery__btn {
+    font-size: 27px;
+  }
+
+  .map__container {
+    flex-direction: column;
+  }
+
+  .map__body {
+    position: unset;
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .head__title {
+    font-size: 16px;
+  }
+
+  .head__title .center {
+    font-size: 107px;
+  }
+
+  .head__title .end {
+    margin-top: -33px;
+  }
+
+  .catalog__title {
+    font-size: 30px;
+  }
+
+  .catalog__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(8, 1fr);
+  }
+
+  .catalog__item:nth-child(1) {
+    grid-column: auto;
+  }
+
+  .services-delivery-wrap::before {
+    max-width: 100%;
+  }
+
+  .services-delivery-wrap::after {
+    max-width: 100%;
+  }
+
+  .services__body {
+    flex-direction: column;
+  }
+
+  .services__content {
+    max-width: 100%;
+    padding-right: 30px;
+  }
+
+  .services__slider {
+    width: 100%;
+    margin: 0;
+  }
+
+  .services__slider-next,
+  .services__slider-prev {
+    width: 200px;
+    height: 50px;
+  }
+
+  .delivery__title {
+    --size-bg: 100%;
+    font-size: 40px;
+  }
+
+  .delivery__body {
+    padding-right: 30px;
+  }
+
+  .delivery__info {
+    max-width: 100%;
+  }
+
+  .work__slider-slide.active-slide .work-card__title {
+    font-size: 17px;
+  }
+
+  .work-card__text {
+    font-size: 15px;
+  }
+
+  .map__title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .connect {
+    padding: 40px;
+    max-width: 80%;
+  }
+
+  .connect__title {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .head-section-wrap {
+    min-height: auto;
+  }
+
+  .head__block {
+    margin-bottom: 200px;
+  }
+
+  .head__title {
+    font-size: 12px;
+  }
+
+  .head__title .head {
+    display: block;
+    margin-bottom: -13px;
+  }
+
+  .head__title .center {
+    font-size: 80px;
+  }
+
+  .head__title .end {
+    margin-top: -25px;
+  }
+
+  .main-btn {
+    font-size: 15px;
+  }
+
+  .head__tabs {
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+  }
+
+  .services__title {
+    font-size: 45px;
+  }
+
+  .services__content-title {
+    text-align: center;
+  }
+
+  .services__slider-next,
+  .services__slider-prev {
+    width: 150px;
+    height: 44px;
+  }
+
+  .services__slider-prev {
+    left: 0;
+  }
+
+  .delivery__title {
+    font-size: 30px;
+  }
+
+  .work__container {
+    padding-left: 30px;
+  }
+
+  .work__title {
+    padding-right: 30px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .work__slider-prev {
+    top: 112px;
+  }
+
+  .work__slider-next {
+    top: 100px;
+  }
+
+  .work-card__head {
+    margin-bottom: 15px;
+  }
+
+  .work__slider-slide.active-slide .work-card__title {
+    font-size: 14px;
+  }
+
+  .work-card__text:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .work-card__title {
+    font-size: 12px;
+  }
+
+  .map__title {
+    font-size: 25px;
+  }
+
+  .map__item-value {
+    font-size: 13px;
+  }
+
+  .connect {
+    max-width: 93%;
+  }
+
+  .connect::after {
+    display: none;
+  }
+
+  .connect__title {
+    font-size: 25px;
+  }
+}
