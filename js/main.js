@@ -106,35 +106,35 @@ if (headTabs && catalog) {
     return [
       {
         title: 'Плиты перекрытия пустотные',
-        img: '../img/category1.png',
+        img: 'img/category1.png',
       },
       {
         title: 'Блоки фундаментные стеновые (ФБС)',
-        img: '../img/category2.png',
+        img: 'img/category2.png',
       },
       {
         title: 'Лотки теплотрасс',
-        img: '../img/category3.png',
+        img: 'img/category3.png',
       },
       {
         title: 'Бордюр дорожный',
-        img: '../img/category4.png',
+        img: 'img/category4.png',
       },
       {
         title: 'Балки',
-        img: '../img/category5.png',
+        img: 'img/category5.png',
       },
       {
         title: 'Перемычки',
-        img: '../img/category6.png',
+        img: 'img/category6.png',
       },
       {
         title: 'Кольца',
-        img: '../img/category7.png',
+        img: 'img/category7.png',
       },
       {
         title: 'Плиты перекрытия пустотные',
-        img: '../img/category8.png',
+        img: 'img/category8.png',
       },
     ];
   }
@@ -339,7 +339,7 @@ if (map) {
       {},
       {
         iconLayout: 'default#image',
-        iconImageHref: '../img/icons/mapmarker.svg',
+        iconImageHref: 'img/icons/mapmarker.svg',
         iconImageSize: [50, 50],
       },
     );
